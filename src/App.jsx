@@ -8,13 +8,9 @@ function App() {
   const [emails, setEmails] = useState('')
   const [invaEmails, setinvaEmails] = useState(false)
   const [subsForm, setSubsform] = useState(false)
-  const successForm = () => {
-
-  }
 
   const emailsInput = (event) => {
     setEmails(event.target.value )
-    
   }
 
   const emailChecker = (email) => {
