@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: 'Roboto';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --Tomato: hsl(4, 100%, 67%);
+    --dark-sl-g: hsl(234, 29%, 20%);
+    --char-gr: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --whit: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--char-gr);
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.8;
+    display: grid;
+    place-content: center;
+}
+
+.list-img{
+    list-style-image: url(assets/images/icon-list.svg);
+    list-style-position: unset;
+    content: '';
+    margin-right: .5rem;
+}
