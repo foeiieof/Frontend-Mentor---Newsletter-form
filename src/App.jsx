@@ -71,7 +71,7 @@ function App() {
         <div className={subsForm ? ' w-full h-full flex flex-col ': 'hidden'} id='confirmMessage'>
           <img src={imgThanks} className='w-20'/>
           <h2 className='text-5xl font-bold mt-8'>Thanks for subscribing!</h2>
-          <a>A confirmation email has been sent to <span id="user-email"></span>. 
+          <a>A confirmation email has been sent to <span className='font-bold'>{emails}</span>. 
           Please open it and click the button inside to comfirm your subscription.</a>
           <button onClick={btnDism} className='cursor-pointer bg-[var(--dark-sl-g)] text-[var(--whit)] font-bold p-4 mb-6 rounded-lg' id="dismiss-message">Dismiss message</button>
           </div>
